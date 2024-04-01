@@ -5,5 +5,20 @@ body {
         max-width: 1200px;
         margin: 0 auto;
         gap: 4rem;
+        position: relative;
+        #Theme {
+            top: 2rem;
+            position: fixed;
+            display: flex;
+            gap: 1rem;
+            z-index: 2;
+            > div {
+                border: 1px solid $text-color-alt;
+                &:hover {
+                    cursor: pointer;
+                    border-color: $text-color;
+                }
+            }
+        }
     }
 }

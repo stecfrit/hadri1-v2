@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './styles/index.scss';
 
+import ThemeProvider from './components/contexts/ThemeContext.jsx';
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App />
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>
     </React.StrictMode>
 );

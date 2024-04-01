@@ -1,6 +1,26 @@
-$text-color: #edf4f2;
-$text-color-alt: #a7beae;
-$background-color: #31473a;
+html {
+    --background-color: #31473a;
+    --text-color: #edf4f2;
+    --text-color-alt: #a7beae;
+}
+html[data-theme='default'] {
+    --background-color: #31473a;
+    --text-color: #edf4f2;
+    --text-color-alt: #a7beae;
+}
+html[data-theme='red'] {
+    --background-color: #b85042;
+    --text-color: #e7e8d1;
+    --text-color-alt: #a7beae;
+}
+
+$background-color: var(--background-color);
+$text-color: var(--text-color);
+$text-color-alt: var(--text-color-alt);
+
+// $text-color: #edf4f2;
+// $text-color-alt: #a7beae;
+// $background-color: #31473a;
 
 $special-color: $text-color;
 $special-color2: #950705;
