@@ -1,0 +1,45 @@
+#Title {
+    padding: 10rem 0;
+    position: sticky;
+
+    max-height: 100vh;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1;
+    width: 50%;
+
+    h1 {
+        font-weight: 700;
+        font-size: $font-size-mega;
+        letter-spacing: -1px;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: $font-size-large;
+    }
+    p {
+        font-size: $font-size-normal;
+        line-height: 1.15;
+        color: $text-color-alt;
+    }
+    #Nav {
+        margin-top: 5rem;
+    }
+    .links {
+        margin-top: auto;
+        display: flex;
+        gap: 1rem;
+        a {
+            color: $text-color-alt;
+            &:hover {
+                color: $text-color;
+            }
+        }
+        .separating-dot {
+            color: $text-color-alt;
+        }
+    }
+}

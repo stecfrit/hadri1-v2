@@ -1,0 +1,9 @@
+body {
+    background: $background-color;
+    #App {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 4rem;
+    }
+}
