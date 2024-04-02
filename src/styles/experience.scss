@@ -10,7 +10,7 @@
         width: 2px;
         height: 100%;
         background: $text-color-alt;
-        margin-top: 5.3rem;
+        margin-top: 5.6rem;
         margin-left: $timeline-offset;
     }
     .experiences {
@@ -32,6 +32,23 @@
                 font-size: $font-size-small;
                 color: $text-color-alt;
                 min-width: fit-content;
+                padding-top: 4px;
+            }
+            .card-right {
+                .company {
+                    letter-spacing: 1px;
+                    font-size: $font-size-normal;
+                    font-weight: 700;
+                }
+                .role {
+                    font-size: $font-size-smallish;
+                    font-weight: 600;
+                    color: $text-color-alt;
+                }
+                .description {
+                    margin-top: 1rem;
+                    font-size: $font-size-smallish;
+                }
             }
             &:hover {
                 .background {
@@ -52,7 +69,7 @@
                 content: '';
                 position: absolute;
                 left: calc($timeline-offset - $margin-left);
-                top: 1.3rem;
+                top: 1.6rem;
                 width: 10px;
                 height: 10px;
                 background: $text-color-alt;
