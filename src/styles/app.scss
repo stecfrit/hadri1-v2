@@ -1,22 +1,65 @@
 body {
     background: $background-color;
     #App {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-        gap: 4rem;
         position: relative;
+        >.content {
+            display: flex;
+            max-width: 1300px;
+            padding: 0 50px;
+            margin: 0 auto;
+            gap: 4rem;
+        }
         #Theme {
-            top: 2rem;
+            bottom: 2rem;
+            right: 2rem;
             position: fixed;
             display: flex;
             gap: 1rem;
             z-index: 2;
-            > div {
-                border: 1px solid $text-color-alt;
+            .theme-button {
+                $theme-button-dimension: 25px;
+                width: $theme-button-dimension;
+                height: $theme-button-dimension;
+                border-radius: 100px;
+                border: 2px solid #e5e5e5;
+                position: relative;
+                &::before {
+                    z-index: -1;
+                    content: '';
+                    position: absolute;
+                    width: $theme-button-dimension;
+                    height: $theme-button-dimension;
+                    border-radius: 100px;
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                    left: 50%;
+                    background: red;
+                }
+                &:not(:hover) {
+                    &::before {
+                        filter: saturate(0);
+                    }
+                }
                 &:hover {
                     cursor: pointer;
-                    border-color: $text-color;
+                }
+                &.default::before {
+                    background: #31473a;
+                }
+                &.red::before {
+                    background: #b85042;
+                }
+                &.blue::before {
+                    background: #375E97;
+                }
+                &.blue2::before {
+                    background: #1995AD;
+                }
+                &.brown::before {
+                    background: #46211A;
+                }
+                &.blue3::before {
+                    background: #2A3132;
                 }
             }
         }
