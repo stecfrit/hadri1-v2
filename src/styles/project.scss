@@ -1,60 +1,45 @@
-#Experience.section {
+#Projects {
     display: flex;
     flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    $timeline-offset: 1rem;
-    .timeline {
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        background: $text-color-alt;
-        margin-top: 5.6rem;
-        margin-left: $timeline-offset;
-    }
-    .experiences {
+    .projects {
         display: flex;
         flex-direction: column;
         gap: 4rem;
-        .experience-container {
+        .project-container {
             position: relative;
-            padding: 1rem;
-            $margin-left: 3rem;
-            margin-left: $margin-left;
+            padding: 2rem;
             display: flex;
             gap: 3rem;
-            .date {
-                text-transform: uppercase;
-                letter-spacing: 0.3px;
-                font-weight: 600;
-                font-size: $font-size-small;
-                color: $text-color-alt;
-                min-width: fit-content;
-                padding-top: 4px;
+            .image {
+                width: fit-content;
+                margin-top: 4px;
+                img {
+                    border: 3px solid $faded-black;
+                    border-radius: 6px;
+                    width: 150px;
+                    height: 150px;
+                    object-fit: cover;
+                }
             }
             .card-right {
                 position: relative;
-                .company {
+                .title {
                     letter-spacing: 1px;
                     font-size: $font-size-normal;
                     font-weight: 700;
                 }
-                .role {
-                    font-size: $font-size-smallish;
-                    font-weight: 600;
-                    color: $text-color-alt;
-                }
                 .description {
                     margin-top: 1rem;
                     font-size: $font-size-smallish;
+                    color: $text-color-alt;
                 }
-                .skills {
+                .techs {
                     display: flex;
                     gap: 1rem;
                     margin-top: 1.5rem;
                     margin-bottom: 1rem;
 
-                    .skill {
+                    .tech {
                         font-size: $font-size-small;
                         text-transform: uppercase;
                         font-weight: 700;
@@ -70,6 +55,9 @@
                 .background {
                     background-color: $text-color-alt;
                 }
+                .image img{
+                    border-color: $faded-white;
+                }
             }
             .background {
                 border-radius: 5px;
@@ -80,17 +68,6 @@
                 right: 0;
                 position: absolute;
                 opacity: 10%;
-            }
-            &::before {
-                content: '';
-                position: absolute;
-                left: calc($timeline-offset - $margin-left + 1px);
-                top: 1.6rem;
-                width: 10px;
-                height: 10px;
-                background: $text-color-alt;
-                border-radius: 100%;
-                transform: translateX(-50%);
             }
         }
     }
