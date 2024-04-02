@@ -60,8 +60,20 @@ export default function Nav() {
                 </li>
                 <li>
                     <a
+                        href="#Education"
+                        className={
+                            activeSection === 'Education' ? 'active' : ''
+                        }
+                    >
+                        Education
+                    </a>
+                </li>
+                <li>
+                    <a
                         href="#Interests"
-                        className={activeSection === 'Interests' ? 'active' : ''}
+                        className={
+                            activeSection === 'Interests' ? 'active' : ''
+                        }
                     >
                         Interests
                     </a>

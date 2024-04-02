@@ -9,11 +9,16 @@ export default function Experience() {
         <div id="Experience" className="section">
             <div className="timeline"></div>
             <h3>Experience</h3>
-            {experiences.map((experience, key) => {
-                return(
-                    <ExperienceContainer experience = {experience} key = {key}/>
-                );
-            })}
+            <div className="experiences">
+                {experiences.map((experience, key) => {
+                    return (
+                        <ExperienceContainer
+                            experience={experience}
+                            key={key}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 }
