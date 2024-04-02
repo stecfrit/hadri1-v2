@@ -3,7 +3,7 @@ import React from 'react';
 import About from './List/About';
 import Experience from './List/Experience';
 import Projects from './List/Projects';
-import Resume from './List/Resume';
+import Interests from './List/Interests';
 
 export default function List() {
     return (
@@ -11,7 +11,7 @@ export default function List() {
             <About />
             <Experience />
             <Projects />
-            <Resume />
+            <Interests />
         </div>
     );
 }

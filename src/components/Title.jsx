@@ -20,6 +20,7 @@ export default function Title() {
                     github
                 </a>
                 <div className="separating-dot">·</div>
+
                 <a
                     href="https://www.linkedin.com/in/hbed-develay/"
                     target="_blank"
@@ -27,6 +28,7 @@ export default function Title() {
                     linkedin
                 </a>
                 <div className="separating-dot">·</div>
+
                 <a
                     href="https://www.instagram.com/hadri1.2velay/"
                     target="_blank"
@@ -34,11 +36,13 @@ export default function Title() {
                     instagram
                 </a>
                 <div className="separating-dot">·</div>
+
                 <a href="mailto:hadrien@develay.uk" target="_blank">
                     email
                 </a>
                 <div className="separating-dot">·</div>
-                <a href="https://resume.hadri1.com/" target="_blank">
+
+                <a href="https://resume.hadri1.com/pdf/resume.pdf" target="_blank">
                     resume
                 </a>
             </div>
