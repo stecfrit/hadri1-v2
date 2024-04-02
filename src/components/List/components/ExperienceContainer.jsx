@@ -11,6 +11,15 @@ export default function ExperienceContainer({ experience }) {
                 <h4 className="company">{experience.company}</h4>
                 <span className="role">{experience.role}</span>
                 <p className="description">{experience.description}</p>
+                <div className="skills">
+                    {experience.skills.map((skill, key) => {
+                        return (
+                            <div className="skill" key={key}>
+                                {skill}
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </div>
     );
