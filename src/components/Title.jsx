@@ -12,7 +12,8 @@ export default function Title() {
                 total obliteration. I will face my fear. I will permit it to
                 pass over me and through me. And when it has gone past I will
                 turn the inner eye to see its path. Where the fear has gone
-                there will be nothing. Only I will remain.
+                there will be nothing. Only I will remain. 
+                <a href='https://en.wikipedia.org/wiki/Bene_Gesserit#Litany_against_fear' target='_blank' className='quote-desc'>&nbsp;&nbsp;&nbsp;Litany Against Fear, <em>Dune</em>, 1965.</a>
             </p>
             <Nav />
             <div className="links">

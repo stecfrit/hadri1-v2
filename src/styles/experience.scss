@@ -1,0 +1,42 @@
+#Experience {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    // overflow: hidden;
+    .timeline {
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: $text-color-alt;
+        margin-top: 10rem;
+    }
+}
+.experience-container {
+    border: 1px solid transparent;
+    position: relative;
+    padding: 1rem;
+    margin-left: 3rem;
+    .date {
+        text-transform: uppercase;
+        letter-spacing: -0px;
+        font-weight: 700;
+        font-size: $font-size-small;
+        color: $text-color-alt;
+    }
+    &:hover {
+        .background {
+            background-color: $text-color-alt;
+        }
+    }
+    .background {
+        border-radius: 5px;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        opacity: 10%;
+    }
+}

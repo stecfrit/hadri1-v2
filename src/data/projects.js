@@ -1,0 +1,59 @@
+export const projects = [
+    {
+        "name": "Chess for iPhone",
+        "moniker": "chess",
+        "description": "Chess for 2 players on one device, this was made for iPhones, and is used as a Progressive Web App (PWA) by clicking 'Add to Homescreen' from Safari. I wanted to use Vite for this project to create my React app, as I had never used it and had too many problems with create-react-app.",
+        "tech": ["React", "Vite"],
+        "link": "https://chess.hadri1.com",
+        "preview_image": "chess.jpg",
+        "new": true,
+        "show": true
+    },
+    {
+        "name": "Big Brain",
+        "moniker": "big-brain",
+        "description": "AI text-completion app, with customizable settings, using OpenAI's API.",
+        "tech": ["React", "OpenAI", "Axios"],
+        "link": "https://brain.hadri1.com",
+        "preview_image": "brain.png",
+        "new": false,
+        "show": true
+    },
+    {
+        "name": "Silhouette",
+        "moniker": "silhouette",
+        "description": "Anonymous real-time chat app.",
+        "tech": ["React", "Firebase"],
+        "link": "https://chat.hadri1.com",
+        "new": false,
+        "show": true
+    },
+    {
+        "name": "Luminance Company Website",
+        "moniker": "luminance",
+        "description": "As part of my role as a Web Software Engineer at Luminance, I was tasked with updating the look of the company website. ",
+        "tech": ["Handlebars"],
+        "link": "https://www.luminance.com",
+        "new": false,
+        "show": true
+    },
+    {
+        "name": "Test",
+        "moniker": "zeitgeist",
+        "description": "Tests for a world dashboard view, in progress.",
+        "tech": ["React", "AWS"],
+        "link": "https://zeitgeist.hadri1.com",
+        "preview_image": "zeitgeist.png",
+        "new": false,
+        "show": true
+    },
+    {
+        "name": "Photo Gallery",
+        "moniker": "gallery",
+        "description": "This is an old photo gallery website I made using simple HTML and CSS for a friend.",
+        "tech": [],
+        "link": "https://gallery.hadri1.com",
+        "new": false,
+        "show": true
+    }
+];
