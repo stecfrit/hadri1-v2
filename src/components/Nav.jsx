@@ -6,15 +6,18 @@ export default function Nav() {
 
     // Have the nav buttons show active style when the correct section is visible
     useEffect(() => {
-        observer.current = new IntersectionObserver((entries) => {
-            const visibleSection = entries.find(
-                (entry) => entry.isIntersecting
-            )?.target;
+        observer.current = new IntersectionObserver(
+            (entries) => {
+                const visibleSection = entries.find(
+                    (entry) => entry.isIntersecting
+                )?.target;
 
-            if (visibleSection) {
-                setActiveSection(visibleSection.id);
-            }
-        });
+                if (visibleSection) {
+                    setActiveSection(visibleSection.id);
+                }
+            },
+            { threshold: 0.5 }
+        );
 
         const sections = document.querySelectorAll('.section');
 
