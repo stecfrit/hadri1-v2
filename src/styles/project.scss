@@ -12,8 +12,10 @@
             gap: 3rem;
             .image {
                 margin-top: 4px;
-                min-width: 150px;
-                height: 150px;
+                $img-dimension: 150px;
+                min-width: $img-dimension;
+                width: $img-dimension;
+                height: $img-dimension;
                 border: 3px solid $faded-black;
                 border-radius: 5px;
                 overflow: hidden;
@@ -21,6 +23,7 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    transition: all 0.2s ease;
                 }
             }
             .card-right {
@@ -63,7 +66,7 @@
             }
             &:not(:hover) {
                 .image img {
-                    filter: saturate(0);
+                    filter: saturate(0) opacity(40%);
                 }
             }
             .background {
