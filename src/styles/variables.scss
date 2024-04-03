@@ -2,41 +2,56 @@ html {
     --background-color: #31473a;
     --text-color: #edf4f2;
     --text-color-alt: #a7beae;
+    --background-color2: #1f2823;
+    // --background-color2: var(--background-color);
 }
 html[data-theme='default'] {
     --background-color: #31473a;
     --text-color: #edf4f2;
     --text-color-alt: #a7beae;
+    --background-color2: #28372f;
+    // --background-color2: var(--background-color);
 }
 html[data-theme='red'] {
     --background-color: #b85042;
     --text-color: #e7e8d1;
     --text-color-alt: #a7beae;
+    --background-color2: #a9392a;
+    // --background-color2: var(--background-color);
 }
 html[data-theme='blue'] {
     --background-color: #375e97;
     --text-color: #fb6542;
     --text-color-alt: #ffbb00;
+    --background-color2: #274776;
+    // --background-color2: var(--background-color);
 }
 html[data-theme='blue2'] {
     --background-color: #1995ad;
     --text-color: #f1f1f2;
     --text-color-alt: #a1d6e2;
+    --background-color2: #0d758a;
+    // --background-color2: var(--background-color);
 }
 html[data-theme='brown'] {
     --background-color: #46211a;
     --text-color: #f1d3b2;
     --text-color-alt: #c06f5d;
+    --background-color2: #331712;
+    // --background-color2: var(--background-color);
 }
 html[data-theme='blue3'] {
     --background-color: #2a3132;
     --text-color: #90afc5;
     --text-color-alt: #c36d4d;
+    --background-color2: #21282a;
+    // --background-color2: var(--background-color);
 }
 
 $background-color: var(--background-color);
 $text-color: var(--text-color);
 $text-color-alt: var(--text-color-alt);
+$background-color2: var(--background-color2);
 
 $faded-white: rgba(255, 255, 255, 0.6);
 $faded-black: rgba(0, 0, 0, 0.2);

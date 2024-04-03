@@ -34,12 +34,16 @@ export default function Nav() {
 
     return (
         <div id="Nav">
+            <div className="scroll-tip">
+                <span>&lt;&lt;&nbsp;&nbsp;&nbsp;Scroll Down</span>
+            </div>
             <ul>
                 <li>
                     <a
                         href="#About"
                         className={activeSection === 'About' ? 'active' : ''}
                     >
+                        <div className="line"></div>
                         About
                     </a>
                 </li>
@@ -50,6 +54,7 @@ export default function Nav() {
                             activeSection === 'Experience' ? 'active' : ''
                         }
                     >
+                        <div className="line"></div>
                         Experience
                     </a>
                 </li>
@@ -58,6 +63,7 @@ export default function Nav() {
                         href="#Projects"
                         className={activeSection === 'Projects' ? 'active' : ''}
                     >
+                        <div className="line"></div>
                         Projects
                     </a>
                 </li>
@@ -68,6 +74,7 @@ export default function Nav() {
                             activeSection === 'Education' ? 'active' : ''
                         }
                     >
+                        <div className="line"></div>
                         Education
                     </a>
                 </li>
@@ -78,6 +85,7 @@ export default function Nav() {
                             activeSection === 'Interests' ? 'active' : ''
                         }
                     >
+                        <div className="line"></div>
                         Interests
                     </a>
                 </li>
