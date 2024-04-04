@@ -1,0 +1,18 @@
+#Cursor {
+    $radius: 20px;
+    width: $radius;
+    height: $radius;
+    border: 2px solid $text-color;
+    border-radius: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background: transparent;
+}
+html {
+    cursor: none;
+    a {
+        cursor: none;
+    }
+}
