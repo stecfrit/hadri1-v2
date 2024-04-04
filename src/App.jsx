@@ -6,14 +6,16 @@ import Theme from './components/Theme';
 import Cursor from './components/Cursor';
 
 function App() {
-    const cursor = useRef(null);
-    const changePosition = (e) => {
-        cursor.current.style.top = `${e.clientY}px`;
-        cursor.current.style.left = `${e.clientX}px`;
-    };
+    // // Some code to have a custom cursor (also see cursor.scss)
+    // const cursor = useRef(null);
+    // const changePosition = (e) => {
+    //     cursor.current.style.top = `${e.clientY}px`;
+    //     cursor.current.style.left = `${e.clientX}px`;
+    // };
     return (
-        <div id="App" onMouseMove={changePosition}>
-            <div id="Cursor" ref={cursor}></div>
+        // <div id="App" onMouseMove={changePosition}>
+        <div id="App">
+            {/* <div id="Cursor" ref={cursor}></div> */}
             <Theme />
             <div className="content">
                 <Title />

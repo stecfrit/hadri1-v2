@@ -57,8 +57,10 @@
                 }
             }
             &:hover {
+                cursor: pointer;
                 .background {
                     background-color: $text-color-alt;
+                    border-color: $text-color;
                 }
                 .image {
                     border-color: $faded-white;
@@ -66,7 +68,7 @@
             }
             &:not(:hover) {
                 .image img {
-                    filter: saturate(0) opacity(40%);
+                    filter: saturate(0) opacity(40%) contrast(120%);
                 }
             }
             .background {
@@ -78,6 +80,8 @@
                 right: 0;
                 position: absolute;
                 opacity: 10%;
+                border-bottom: 2px solid transparent;
+                border-right: 1px solid transparent;
             }
         }
     }

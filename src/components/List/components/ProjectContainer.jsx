@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ProjectContainer({ project }) {
   return (
-    <div className="project-container">
+    <a href={project.link} target='_blank' className="project-container">
         <div className="background"></div>
         <div className="image">
             <img src={`./preview/${project.preview_image}`} alt="" />
@@ -20,6 +20,6 @@ export default function ProjectContainer({ project }) {
                     })}
                 </div>
         </div>
-    </div>
+    </a>
   )
 }
