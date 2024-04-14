@@ -49,4 +49,17 @@
             font-size: $font-size-normal;
         }
     }
+    p.quote {
+        font-size: $font-size-normal;
+        line-height: 1.15;
+        color: $text-color-alt;
+        max-width: 500px;
+        .quote-desc {
+            font-size: $font-size-small;
+            font-weight: 600;
+            // letter-spacing: -0.25px;
+            // text-transform: uppercase;
+            // color: $text-color-alt;
+        }
+    }
 }

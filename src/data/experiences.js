@@ -5,7 +5,7 @@ export const experiences = [
         start: '09/22',
         end: '01/24',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex urna. Fusce nec tellus magna. Etiam elementum metus vel ultricies efficitur. Donec pretium mauris vitae efficitur sodales. Nam id massa vel purus fringilla tincidunt. Proin rutrum, lorem at mollis ultrices, neque erat tristique ipsum, sit amet tempus turpis sem.',
+            'Led independent overhaul of company website, tested and deployed while coordinating with Marketing. Developed mostly Front-End components for single-page app, fostering cross-functional collaboration for efficient debugging and testing. Provided mentorship to new team members, sharing deep insights into the codebase and best practices, fostering rapid onboarding and professional development.',
         skills: ['Backbone.js', 'Git', 'PostgreSQL'],
         logo: 'luminance-logo.png',
     },
@@ -15,7 +15,7 @@ export const experiences = [
         start: '09/19',
         end: '06/22',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ex urna. Fusce nec tellus magna. Etiam elementum metus vel ultricies efficitur. Donec pretium mauris vitae efficitur sodales. Nam id massa vel purus fringilla tincidunt. Proin rutrum, lorem at mollis ultrices, neque erat tristique ipsum, sit amet tempus turpis sem.',
+            'Leadership experience from being the Vice-President and Public Relations Officer of the University of Southampton Skydive Club. Developed resilience from adapting to challenges introduced by the pandemic.',
         skills: [],
     },
 ];
