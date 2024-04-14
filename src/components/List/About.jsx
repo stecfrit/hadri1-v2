@@ -4,7 +4,7 @@ export default function About() {
     return (
         <div id="About" className="section">
             <h3>About</h3>
-            <p>
+            {/* <p>
                 Hi! I’m Hadrien Develay, an Aerospace Engineering graduate with
                 a passion for merging computer science with spacecraft
                 engineering. My journey began at the University of Southampton,
@@ -36,6 +36,24 @@ export default function About() {
                 in French and English, and I have intermediate proficiency in
                 Spanish and Norwegian. I’m excited to bring my diverse set of
                 skills and experiences to future endeavors.
+            </p> */}
+            <p>
+                In my early university days at the University of Southampton, a
+                curiosity for merging computer science with spacecraft
+                engineering took hold. This led to leadership roles in projects
+                like developing a passive magnetic axial thrust bearing and an
+                unmanned vehicle. After earning my degree in Aerospace
+                Engineering, I transitioned to web development at Luminance,
+                leading a major website overhaul and enhancing our single-page
+                apps. Today, I combine in-depth engineering principles with
+                cutting-edge web tech, striving for solutions that are not only
+                innovative but also meticulously crafted. Outside of
+                engineering, I’m an avid sportsman and adventure seeker,
+                engaging in activities from skydiving to scuba diving, and even
+                3D design. Fluent in French and English with conversational
+                Spanish and Norwegian, I'm keen to leverage my broad skills in
+                new and challenging projects, particularly those exploring the
+                final frontier—space.
             </p>
         </div>
     );
