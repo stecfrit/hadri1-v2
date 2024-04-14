@@ -8,6 +8,7 @@ export default function Nav() {
     useEffect(() => {
         observer.current = new IntersectionObserver(
             (entries) => {
+                console.log(entries);
                 const visibleSection = entries.find(
                     (entry) => entry.isIntersecting
                 )?.target;
@@ -16,7 +17,10 @@ export default function Nav() {
                     setActiveSection(visibleSection.id);
                 }
             },
-            { threshold: 0.5 }
+            {
+                rootMargin: '-30% 0px -50% 0px', // how the bounding box is modified from the viewport
+                threshold: 0.01, // the amount of a certain element that needs to be visible for it to be triggered
+            }
         );
 
         const sections = document.querySelectorAll('.section');
