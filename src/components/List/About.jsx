@@ -38,22 +38,27 @@ export default function About() {
                 skills and experiences to future endeavors.
             </p> */}
             <p>
-                In my early university days at the University of Southampton, a
-                curiosity for merging computer science with spacecraft
-                engineering took hold. This led to leadership roles in projects
-                like developing a passive magnetic axial thrust bearing and an
-                unmanned vehicle. After earning my degree in Aerospace
-                Engineering, I transitioned to web development at Luminance,
-                leading a major website overhaul and enhancing our single-page
-                apps. Today, I combine in-depth engineering principles with
-                cutting-edge web tech, striving for solutions that are not only
-                innovative but also meticulously crafted. Outside of
-                engineering, I’m an avid sportsman and adventure seeker,
-                engaging in activities from skydiving to scuba diving, and even
-                3D design. Fluent in French and English with conversational
-                Spanish and Norwegian, I'm keen to leverage my broad skills in
-                new and challenging projects, particularly those exploring the
-                final frontier—space.
+                Hi! I’m Hadrien Develay, an Aerospace Engineering graduate from
+                the University of Southampton with a passion for integrating
+                computer science with spacecraft engineering. My academic
+                projects included designing a passive magnetic axial thrust
+                bearing and an unmanned vehicle, forming a solid foundation in
+                engineering and space exploration.
+            </p>
+            <p>
+                Professionally, I started as a Web Software Engineer at
+                Luminance, where I led the overhaul of the company website and
+                developed key front-end components. My role also involved
+                mentoring, enhancing my skills in team collaboration and web
+                technology.
+            </p>
+            <p>
+                Outside work, I'm an enthusiastic sportsman involved in
+                skydiving, sailing, and bouldering, and a BASI Level 1 Ski
+                Instructor. I enjoy DIY projects, 3D printing, and multimedia
+                production. Fluent in French and English with knowledge of
+                Spanish and Norwegian, I'm eager to apply my diverse skills in
+                new challenges.
             </p>
         </div>
     );

@@ -1,14 +1,16 @@
 #Cursor {
-    $radius: 20px;
+    $radius: 100vw;
     width: $radius;
     height: $radius;
-    border: 2px solid $text-color;
     border-radius: 100%;
     position: fixed;
     top: 0;
     left: 0;
     transform: translate(-50%, -50%);
-    background: transparent;
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.04) 0%,
+        rgba(255, 255, 255, 0) 50%
+    );
 }
 // html {
 //     cursor: none;
