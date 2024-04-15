@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Interests() {
     const interests = [
@@ -56,6 +56,14 @@ function ImageContainer({ interest }) {
             setImageIndex(interest.images.length - 1);
         else setImageIndex(imageIndex + step);
     };
+
+    useEffect(() => {
+        //preloading image
+        interest.images.forEach((image_url) => {
+            const img = new Image();
+            img.src = './interests/' + interest.image_folder + '/' + image_url;
+        });
+    }, []);
 
     return (
         <div className="interest-card">
