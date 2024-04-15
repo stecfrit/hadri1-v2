@@ -8,7 +8,6 @@ export default function Nav() {
     useEffect(() => {
         observer.current = new IntersectionObserver(
             (entries) => {
-                console.log(entries);
                 const visibleSection = entries.find(
                     (entry) => entry.isIntersecting
                 )?.target;

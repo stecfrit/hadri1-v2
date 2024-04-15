@@ -1,5 +1,5 @@
 #Cursor {
-    $radius: 100vw;
+    $radius: 70vw;
     width: $radius;
     height: $radius;
     border-radius: 100%;
@@ -8,7 +8,7 @@
     left: 0;
     transform: translate(-50%, -50%);
     background: radial-gradient(
-        rgba(255, 255, 255, 0.04) 0%,
+        rgba(255, 255, 255, 0.08) 0%,
         rgba(255, 255, 255, 0) 50%
     );
     pointer-events: none;
