@@ -25,11 +25,11 @@
                     display: flex;
                     button {
                         background: $background-color;
-                        height: 20px;
+                        height: 16px;
                         width: 50%;
                         border: none;
                         color: $text-color-alt;
-                        font-size: $font-size-small;
+                        font-size: $font-size-smaller;
                         font-weight: 400;
                         border-color: $text-color-alt;
                         border-style: solid;
@@ -40,6 +40,7 @@
                         }
                         &:last-child {
                             border-bottom-right-radius: $border-radius;
+                            border-left-width: 0px;
                         }
                         &:hover {
                             cursor: pointer;
