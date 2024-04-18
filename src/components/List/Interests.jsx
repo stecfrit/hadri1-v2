@@ -82,17 +82,13 @@ function ImageContainer({ interest }) {
                         onClick={() => {
                             changeImage(-1);
                         }}
-                    >
-                        prev
-                    </button>
+                    ></button>
                     <button
                         className="next"
                         onClick={() => {
                             changeImage(1);
                         }}
-                    >
-                        next
-                    </button>
+                    ></button>
                 </div>
             </div>
         </div>
