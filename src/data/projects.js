@@ -4,9 +4,9 @@ export const projects = [
         'moniker': 'orbit',
         'description':
             'An app to calculate some simple manoeuvres. This is a personal challenge to review some orbital mechanics fundamentals, as well as implement a robust calculating and plotting tool into a React Vite app. For the moment, it only includes a circular Hohmann transfer, but I am working to introduce tools for elliptic and bi-elliptic Hohmann transfers',
-        'tech': ['React', 'Vite'],
+        'tech': ['React', 'Vite', 'OOP'],
         'link': 'https://orbit.hadri1.com',
-        'preview_image': 'not-available.png',
+        'preview_image': 'orbit.png',
         'new': true,
         'show': true,
     },
