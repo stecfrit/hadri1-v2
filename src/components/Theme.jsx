@@ -13,12 +13,30 @@ export default function Theme() {
 
     return (
         <div id="Theme">
-            <div className='theme-button default' onClick={() => setTheme('default')}></div>
-            <div className='theme-button red' onClick={() => setTheme('red')}></div>
-            <div className='theme-button blue' onClick={() => setTheme('blue')}></div>
-            <div className='theme-button blue2' onClick={() => setTheme('blue2')}></div>
-            <div className='theme-button brown' onClick={() => setTheme('brown')}></div>
-            <div className='theme-button blue3' onClick={() => setTheme('blue3')}></div>
+            <div
+                className="theme-button default"
+                onClick={() => setTheme('default')}
+            ></div>
+            <div
+                className="theme-button red"
+                onClick={() => setTheme('red')}
+            ></div>
+            {/* <div
+                className="theme-button blue"
+                onClick={() => setTheme('blue')}
+            ></div> */}
+            <div
+                className="theme-button blue2"
+                onClick={() => setTheme('blue2')}
+            ></div>
+            <div
+                className="theme-button brown"
+                onClick={() => setTheme('brown')}
+            ></div>
+            <div
+                className="theme-button blue3"
+                onClick={() => setTheme('blue3')}
+            ></div>
         </div>
     );
 }
