@@ -5,7 +5,7 @@ import Nav from './Nav';
 export default function Title() {
     return (
         <div id="Title">
-            <h1>Hadrien Develay</h1>
+            <h1>Hadrien Develay &#x1f680;</h1>
             <h2>Web Software Engineer</h2>
             {/* <p>
                 Fear is the mind-killer. Fear is the little-death that brings
