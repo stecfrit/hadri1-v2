@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import Title from './components/Title';
 import List from './components/List';
@@ -14,15 +14,19 @@ function App() {
     };
 
     // hides the cursor on mobiles and tablets
-    const is_mobile = navigator.userAgent.match(
-        /(Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini)/
-    );
-    const cursor_el = is_mobile ? <div id="Cursor" ref={cursor}></div> : <></>;
+    const supportsTouch =
+        'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+    useEffect(() => {
+        if (supportsTouch) {
+            cursor.current.classList.add('hidden');
+        }
+    }, []);
 
     return (
         <div id="App" onMouseMove={changePosition}>
             {/* <div id="App"> */}
-            {cursor_el}
+            <div id="Cursor" ref={cursor}></div>
             <Theme />
             <div className="content">
                 <Title />
