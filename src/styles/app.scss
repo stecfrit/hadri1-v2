@@ -91,3 +91,11 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    body #App {
+        > .content {
+            padding: 0 30px;
+        }
+    }
+}
