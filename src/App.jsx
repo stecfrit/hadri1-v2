@@ -12,10 +12,17 @@ function App() {
         cursor.current.style.top = `${e.clientY}px`;
         cursor.current.style.left = `${e.clientX}px`;
     };
+
+    // hides the cursor on mobiles and tablets
+    const is_mobile = navigator.userAgent.match(
+        /(Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini)/
+    );
+    const cursor_el = is_mobile ? <div id="Cursor" ref={cursor}></div> : <></>;
+
     return (
         <div id="App" onMouseMove={changePosition}>
             {/* <div id="App"> */}
-            <div id="Cursor" ref={cursor}></div>
+            {cursor_el}
             <Theme />
             <div className="content">
                 <Title />

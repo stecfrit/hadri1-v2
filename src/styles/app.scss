@@ -10,7 +10,7 @@ body {
 
     #App {
         position: relative;
-        >.content {
+        > .content {
             display: flex;
             max-width: 1300px;
             padding: 0 50px;
@@ -58,16 +58,34 @@ body {
                     background: #b85042;
                 }
                 &.blue::before {
-                    background: #375E97;
+                    background: #375e97;
                 }
                 &.blue2::before {
-                    background: #1995AD;
+                    background: #1995ad;
                 }
                 &.brown::before {
-                    background: #46211A;
+                    background: #46211a;
                 }
                 &.blue3::before {
-                    background: #2A3132;
+                    background: #2a3132;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    body #App {
+        > .content {
+            flex-direction: column;
+            padding: 0 10rem;
+            > div {
+                width: auto;
+            }
+            #Title {
+                position: relative;
+                #Nav {
+                    display: none;
                 }
             }
         }
