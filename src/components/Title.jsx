@@ -4,8 +4,8 @@ import Nav from './Nav';
 import LinkedinLogo from '../assets/logos/linkedin.svg?react';
 import GithubLogo from '../assets/logos/github.svg?react';
 import EmailLogo from '../assets/logos/email.svg?react';
-import InstagramLogo from '../assets/logos/instagram2.svg?react';
-import ResumeLogo from '../assets/logos/resume2.svg?react';
+import InstagramLogo from '../assets/logos/instagram.svg?react';
+import ResumeLogo from '../assets/logos/resume.svg?react';
 
 export default function Title() {
     return (
