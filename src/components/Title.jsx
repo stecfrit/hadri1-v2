@@ -1,6 +1,11 @@
 import React from 'react';
 
 import Nav from './Nav';
+import LinkedinLogo from '../assets/logos/linkedin.svg?react';
+import GithubLogo from '../assets/logos/github.svg?react';
+import EmailLogo from '../assets/logos/email.svg?react';
+import InstagramLogo from '../assets/logos/instagram2.svg?react';
+import ResumeLogo from '../assets/logos/resume2.svg?react';
 
 export default function Title() {
     return (
@@ -52,6 +57,40 @@ export default function Title() {
                     target="_blank"
                 >
                     resume
+                </a>
+            </div>
+            <div className="links-mobile">
+                <a href="https://github.com/hadri12velay" target="_blank">
+                    <GithubLogo />
+                </a>
+                {/* <div className="separating-dot">·</div> */}
+
+                <a
+                    href="https://www.linkedin.com/in/hbed-develay/"
+                    target="_blank"
+                >
+                    <LinkedinLogo />
+                </a>
+                {/* <div className="separating-dot">·</div> */}
+
+                <a
+                    href="https://www.instagram.com/hadri1.2velay/"
+                    target="_blank"
+                >
+                    <InstagramLogo />
+                </a>
+                {/* <div className="separating-dot">·</div> */}
+
+                <a href="mailto:hadrien@develay.uk" target="_blank">
+                    <EmailLogo />
+                </a>
+                {/* <div className="separating-dot">·</div> */}
+
+                <a
+                    href="https://resume.hadri1.com/pdf/resume.pdf"
+                    target="_blank"
+                >
+                    <ResumeLogo />
                 </a>
             </div>
         </div>

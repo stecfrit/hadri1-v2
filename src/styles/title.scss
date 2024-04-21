@@ -18,7 +18,7 @@
         letter-spacing: -1px;
     }
     h2 {
-        font-weight: bold;
+        font-weight: 600;
         font-size: $font-size-large;
     }
     p {
@@ -45,6 +45,31 @@
             color: $text-color-alt;
             &:hover {
                 color: $text-color;
+            }
+        }
+        .separating-dot {
+            color: $text-color-alt;
+        }
+    }
+    .links-mobile {
+        margin-top: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        a {
+            svg,
+            g,
+            path {
+                fill: $text-color-alt;
+                height: 30px;
+            }
+            &:hover {
+                svg,
+                g,
+                path {
+                    fill: $text-color;
+                }
             }
         }
         .separating-dot {
