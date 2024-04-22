@@ -19,9 +19,10 @@ export default function Experience() {
                     );
                 })}
                 <IconLink
-                    to="/resume"
+                    to="https://resume.hadri1.com/pdf/resume.pdf"
                     className="diagonal experience-link"
                     icon={<ArrowIcon />}
+                    external={true}
                 >
                     View PDF Résumé
                 </IconLink>

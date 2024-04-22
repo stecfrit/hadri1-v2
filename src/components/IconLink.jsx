@@ -7,6 +7,7 @@ export default function IconLink({
     children,
     icon,
     icon_first,
+    external,
 }) {
     const content = icon_first ? (
         <>
@@ -19,9 +20,17 @@ export default function IconLink({
             {icon}
         </>
     );
-    return (
-        <Link className={`arrow-link ${className}`} to={to}>
-            {content}
-        </Link>
-    );
+    if (external) {
+        return (
+            <a href={to} target="_blank" className={`arrow-link ${className}`}>
+                {content}
+            </a>
+        );
+    } else {
+        return (
+            <Link className={`arrow-link ${className}`} to={to}>
+                {content}
+            </Link>
+        );
+    }
 }
