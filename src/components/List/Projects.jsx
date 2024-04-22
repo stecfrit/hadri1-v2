@@ -13,7 +13,7 @@ export default function Projects() {
                     return <ProjectContainer project={project} key={key} />;
                 })}
                 <ArrowLink to="/projects" className="projects-link">
-                    Complete list of projects (WIP)
+                    Complete List of Projects (WIP)
                 </ArrowLink>
             </div>
         </div>
