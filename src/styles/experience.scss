@@ -7,7 +7,7 @@
     .timeline {
         position: absolute;
         width: 2px;
-        height: 100%;
+        height: calc(100% - 24rem); // Arbitrary value to clip timeline
         background: $text-color-alt;
         margin-top: calc(4rem + 17px);
         margin-left: $timeline-offset;
@@ -107,16 +107,20 @@
                 transform: translate(0, -50%);
                 transition: all 0.2s ease;
             }
-            &:hover::before{
+            &:hover::before {
                 left: calc($timeline-offset - $margin-left + 15px);
                 width: 2px;
                 height: 2px;
                 // background: $text-color;
             }
-            &:hover::after{
+            &:hover::after {
                 width: 15px;
                 // background: $text-color;
             }
+        }
+        .experience-link {
+            padding: 0 2rem;
+            margin: 0 auto;
         }
     }
 }

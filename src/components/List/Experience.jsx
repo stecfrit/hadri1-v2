@@ -1,8 +1,8 @@
 import React from 'react';
-
 import ExperienceContainer from './components/ExperienceContainer';
-
 import { experiences } from '../../data/experiences';
+import IconLink from '../IconLink';
+import ArrowIcon from '../../assets/icons/arrow-diag.svg?react';
 
 export default function Experience() {
     return (
@@ -18,6 +18,13 @@ export default function Experience() {
                         />
                     );
                 })}
+                <IconLink
+                    to="/resume"
+                    className="diagonal experience-link"
+                    icon={<ArrowIcon />}
+                >
+                    View PDF Résumé
+                </IconLink>
             </div>
         </div>
     );

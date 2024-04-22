@@ -2,7 +2,8 @@ import React from 'react';
 import ProjectContainer from './components/ProjectContainer';
 import { Link } from 'react-router-dom';
 import { projects } from '../../data/projects';
-import ArrowIcon from '../../assets/icons/arrow-diag.svg?react';
+import ArrowIcon from '../../assets/icons/arrow-right.svg?react';
+import IconLink from '../IconLink';
 
 export default function Projects() {
     return (
@@ -12,19 +13,14 @@ export default function Projects() {
                 {projects.map((project, key) => {
                     return <ProjectContainer project={project} key={key} />;
                 })}
-                <ArrowLink to="/projects" className="projects-link">
+                <IconLink
+                    to="/projects"
+                    className="right projects-link"
+                    icon={<ArrowIcon />}
+                >
                     Complete List of Projects (WIP)
-                </ArrowLink>
+                </IconLink>
             </div>
         </div>
-    );
-}
-
-function ArrowLink({ to, className, children }) {
-    return (
-        <Link className={`arrow-link ${className}`} to={to}>
-            {children}
-            <ArrowIcon />
-        </Link>
     );
 }

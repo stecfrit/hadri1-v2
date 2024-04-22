@@ -86,17 +86,6 @@
         }
         .projects-link {
             padding: 0 2rem;
-            color: $text-color-alt;
-            font-weight: 500;
-            svg path {
-                stroke: $text-color-alt;
-            }
-            &:hover {
-                color: $text-color;
-                svg path {
-                    stroke: $text-color;
-                }
-            }
         }
     }
 }
