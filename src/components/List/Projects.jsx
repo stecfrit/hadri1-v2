@@ -22,7 +22,7 @@ export default function Projects() {
 
 function ArrowLink({ link, className, children }) {
     return (
-        <Link className={className} to={link}>
+        <Link className={`arrow-link ${className}`} to={link}>
             {children}
             <ArrowIcon />
         </Link>
