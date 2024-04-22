@@ -134,3 +134,21 @@ code {
 ul {
     list-style: none;
 }
+
+a {
+    display: flex;
+    align-items: center;
+    svg {
+        height: 20px !important;
+        transition: all 0.1s ease;
+        path {
+            stroke: $text-color;
+            fill: $text-color;
+        }
+    }
+    &:hover {
+        svg {
+            transform: translate(3px, -3px);
+        }
+    }
+}

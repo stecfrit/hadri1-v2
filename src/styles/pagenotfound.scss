@@ -1,0 +1,21 @@
+#PageNotFound {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    h1 {
+        font-weight: 500;
+        font-size: $font-size-larger;
+    }
+    h2,
+    a {
+        font-weight: 400;
+        font-size: $font-size-largish;
+        & a:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -10,11 +10,15 @@ body {
 
     #App {
         position: relative;
+        min-height: 100vh;
+        min-height: 100dvh;
         > .content {
             display: flex;
             max-width: 1300px;
             padding: 0 50px;
             margin: 0 auto;
+        }
+        #Home {
             gap: 4rem;
         }
         #Theme {

@@ -1,8 +1,8 @@
 import React from 'react';
-
 import ProjectContainer from './components/ProjectContainer';
-
+import { Link } from 'react-router-dom';
 import { projects } from '../../data/projects';
+import ArrowIcon from '../../assets/icons/arrow-diag.svg?react';
 
 export default function Projects() {
     return (
@@ -10,14 +10,21 @@ export default function Projects() {
             <h3>Projects</h3>
             <div className="projects">
                 {projects.map((project, key) => {
-                    return (
-                        <ProjectContainer
-                            project={project}
-                            key={key}
-                        />
-                    );
+                    return <ProjectContainer project={project} key={key} />;
                 })}
+                <ArrowLink to="/projects" className="projects-link">
+                    Complete list of projects (WIP)
+                </ArrowLink>
             </div>
         </div>
+    );
+}
+
+function ArrowLink({ link, className, children }) {
+    return (
+        <Link className={className} to={link}>
+            {children}
+            <ArrowIcon />
+        </Link>
     );
 }
