@@ -6,7 +6,7 @@ export const experiences = [
         end: '01/24',
         description:
             'Led independent overhaul of company website, tested and deployed while coordinating with Marketing. Developed mostly Front-End components for single-page app, fostering cross-functional collaboration for efficient debugging and testing. Provided mentorship to new team members, sharing deep insights into the codebase and best practices, fostering rapid onboarding and professional development.',
-        skills: ['Backbone.js', 'Git', 'PostgreSQL', 'Node.js'],
+        skills: ['Typescript', 'Git', 'PostgreSQL', 'Node'],
         logo: 'luminance-logo.png',
     },
     {
