@@ -11,7 +11,8 @@ export default function Projects() {
             <h3>Projects</h3>
             <div className="projects">
                 {projects.map((project, key) => {
-                    return <ProjectContainer project={project} key={key} />;
+                    if (project.featured)
+                        return <ProjectContainer project={project} key={key} />;
                 })}
                 <IconLink
                     to="/projects"

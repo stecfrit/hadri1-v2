@@ -1,2 +1,45 @@
 #ProjectPage {
+    > .project-page-container {
+        width: 100%;
+        margin-top: 10rem;
+        h1 {
+            font-size: $font-size-largest;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        table.projects-table {
+            margin-top: 5rem;
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: collapse;
+            thead {
+                font-weight: 600;
+            }
+            td {
+                padding: 1rem 1rem 1rem 0;
+            }
+            tr {
+                border-bottom: 1px solid $text-color-alt;
+            }
+            td.tech {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                span {
+                    background: $text-color;
+                    color: $background-color;
+                    font-weight: 700;
+                    letter-spacing: 0.3px;
+                    text-transform: uppercase;
+                    font-size: $font-size-small;
+                    border-radius: 4px;
+                    padding: 4px 6px;
+                }
+            }
+            td.year,
+            td.link a {
+                color: $text-color-alt;
+            }
+        }
+    }
 }
