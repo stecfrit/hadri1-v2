@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
+import Twemoji from "../Twemoji";
 
 export default function About() {
-    return (
-        <div id="About" className="section">
-            <h3>About</h3>
-            {/* <p>
+  return (
+    <div id="About" className="section">
+      <h3>About</h3>
+      {/* <p>
                 Hi! I’m Hadrien Develay, an Aerospace Engineering graduate with
                 a passion for merging computer science with spacecraft
                 engineering. My journey began at the University of Southampton,
@@ -37,29 +38,29 @@ export default function About() {
                 Spanish and Norwegian. I’m excited to bring my diverse set of
                 skills and experiences to future endeavors.
             </p> */}
-            <p>
-                Hi! I’m Hadrien Develay, an Aerospace Engineering graduate from
-                the University of Southampton with a passion for integrating
-                computer science with spacecraft engineering. My academic
-                projects included designing a passive magnetic axial thrust
-                bearing and an unmanned vehicle, forming a solid foundation in
-                engineering and space exploration.
-            </p>
-            <p>
-                Professionally, I started as a Web Software Engineer at
-                Luminance, where I led the overhaul of the company website and
-                developed key front-end components. My role also involved
-                mentoring, enhancing my skills in team collaboration and web
-                technology.
-            </p>
-            <p>
-                Outside work, I'm an enthusiastic sportsman involved in
-                skydiving, sailing, and bouldering, and a BASI Level 1 Ski
-                Instructor. I enjoy DIY projects, 3D printing, and multimedia
-                production. Fluent in French and English with knowledge of
-                Spanish and Norwegian, I'm eager to apply my diverse skills in
-                new challenges.
-            </p>
-        </div>
-    );
+
+      <p>
+        Hi! I’m Hadrien Develay <Twemoji emoji="👋" />, an Aerospace Engineering
+        graduate from the University of Southampton with a passion for
+        integrating computer science with spacecraft engineering. My academic
+        projects included designing a passive magnetic axial thrust bearing and
+        an unmanned vehicle, forming a solid foundation in engineering and space
+        exploration.
+      </p>
+      <p>
+        Professionally, I started as a Web Software Engineer at Luminance, where
+        I led the overhaul of the company website and developed key front-end
+        components. My role also involved mentoring, enhancing my skills in team
+        collaboration and web technology.
+      </p>
+      <p>
+        Outside work, I'm an enthusiastic sportsman involved in skydiving,
+        sailing, and bouldering, and a BASI Level 1 Ski Instructor. I enjoy DIY
+        projects, 3D printing, and multimedia production. Fluent in French{" "}
+        <Twemoji emoji="🇫🇷" /> and English <Twemoji emoji="🇬🇧" /> with knowledge
+        of Spanish and Norwegian <Twemoji emoji="🇳🇴" />, I'm eager to apply my
+        diverse skills in new challenges.
+      </p>
+    </div>
+  );
 }

@@ -1,52 +1,52 @@
 html {
-    --background-color: #31473a;
-    --text-color: #edf4f2;
-    --text-color-alt: #a7beae;
-    --background-color2: #1f2823;
-    // --background-color2: var(--background-color);
+  --background-color: #31473a;
+  --text-color: #edf4f2;
+  --text-color-alt: #a7beae;
+  --background-color2: #1f2823;
+  // --background-color2: var(--background-color);
 }
-html[data-theme='default'] {
-    --background-color: #31473a;
-    --text-color: #edf4f2;
-    --text-color-alt: #a7beae;
-    --background-color2: #28372f;
-    // --background-color2: var(--background-color);
+html[data-theme="default"] {
+  --background-color: #31473a;
+  --text-color: #edf4f2;
+  --text-color-alt: #a7beae;
+  --background-color2: #28372f;
+  // --background-color2: var(--background-color);
 }
-html[data-theme='red'] {
-    --background-color: #b85042;
-    --text-color: #e7e8d1;
-    // --text-color-alt: #a7beae;
-    --text-color-alt: #fda89d;
-    --background-color2: #a9392a;
-    // --background-color2: var(--background-color);
+html[data-theme="red"] {
+  --background-color: #b85042;
+  --text-color: #e7e8d1;
+  // --text-color-alt: #a7beae;
+  --text-color-alt: #fda89d;
+  --background-color2: #a9392a;
+  // --background-color2: var(--background-color);
 }
-html[data-theme='blue'] {
-    --background-color: #375e97;
-    --text-color: #fb6542;
-    --text-color-alt: #ffbb00;
-    --background-color2: #274776;
-    // --background-color2: var(--background-color);
+html[data-theme="blue"] {
+  --background-color: #375e97;
+  --text-color: #fb6542;
+  --text-color-alt: #ffbb00;
+  --background-color2: #274776;
+  // --background-color2: var(--background-color);
 }
-html[data-theme='blue2'] {
-    --background-color: #1995ad;
-    --text-color: #f1f1f2;
-    --text-color-alt: #a1d6e2;
-    --background-color2: #0d758a;
-    // --background-color2: var(--background-color);
+html[data-theme="blue2"] {
+  --background-color: #1995ad;
+  --text-color: #f1f1f2;
+  --text-color-alt: #a1d6e2;
+  --background-color2: #0d758a;
+  // --background-color2: var(--background-color);
 }
-html[data-theme='brown'] {
-    --background-color: #46211a;
-    --text-color: #f1d3b2;
-    --text-color-alt: #c06f5d;
-    --background-color2: #331712;
-    // --background-color2: var(--background-color);
+html[data-theme="brown"] {
+  --background-color: #46211a;
+  --text-color: #f1d3b2;
+  --text-color-alt: #c06f5d;
+  --background-color2: #331712;
+  // --background-color2: var(--background-color);
 }
-html[data-theme='blue3'] {
-    --background-color: #2a3132;
-    --text-color: #90afc5;
-    --text-color-alt: #c36d4d;
-    --background-color2: #21282a;
-    // --background-color2: var(--background-color);
+html[data-theme="blue3"] {
+  --background-color: #2a3132;
+  --text-color: #90afc5;
+  --text-color-alt: #c36d4d;
+  --background-color2: #21282a;
+  // --background-color2: var(--background-color);
 }
 
 $background-color: var(--background-color);
@@ -82,94 +82,101 @@ $font-size-smallest: 0.8rem;
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    // font-size: 62.5%;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    div,
-    p,
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    span,
-    input,
-    button,
-    label,
-    li,
-    textarea {
-        color: $text-color;
-        font-weight: 400;
-        font-size: $font-size-normal;
-        text-decoration: none;
-    }
+  // font-size: 62.5%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  div,
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  input,
+  button,
+  label,
+  li,
+  textarea {
+    color: $text-color;
+    font-weight: 400;
+    font-size: $font-size-normal;
+    text-decoration: none;
+  }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 body {
-    // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    //     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    //     'Helvetica Neue', sans-serif;
-    font-family: 'Inter', sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: 'slnt' 0;
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  //     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  //     'Helvetica Neue', sans-serif;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a.arrow-link {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.1s ease;
+  gap: 3px;
+  color: $text-color-alt;
+  font-weight: 500;
+  svg {
+    height: 20px;
     transition: all 0.1s ease;
-    gap: 3px;
-    color: $text-color-alt;
-    font-weight: 500;
+    path {
+      stroke: $text-color-alt;
+      fill: $text-color-alt;
+    }
+  }
+  &.diagonal:hover {
     svg {
-        height: 20px;
-        transition: all 0.1s ease;
-        path {
-            stroke: $text-color-alt;
-            fill: $text-color-alt;
-        }
+      transform: translate(3px, -3px);
     }
-    &.diagonal:hover {
-        svg {
-            transform: translate(3px, -3px);
-        }
+  }
+  &.right:hover {
+    svg {
+      transform: translateX(5px);
     }
-    &.right:hover {
-        svg {
-            transform: translateX(5px);
-        }
+  }
+  &.left:hover {
+    svg {
+      transform: translateX(-5px);
     }
-    &.left:hover {
-        svg {
-            transform: translateX(-5px);
-        }
+  }
+  &:hover {
+    color: $text-color;
+    svg path {
+      stroke: $text-color;
     }
-    &:hover {
-        color: $text-color;
-        svg path {
-            stroke: $text-color;
-        }
-    }
+  }
+}
+
+.emoji {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  vertical-align: -0.125em;
 }
