@@ -14,14 +14,16 @@ export default function Interests() {
         "tignes.jpg",
         "valleeperdue.jpg",
       ],
-      description: "This is a description",
+      description:
+        "I have been skiing since forever but only recently have I started to ski more seriously. One of my lifestyle goals is to be able to ski on weekends casually whenever I want.",
       badges: ["BASI 1 Instructor"],
     },
     {
       title: "Skydiving",
       image_folder: "skydiving",
       images: ["5way.png", "two.jpg"],
-      description: "This is a description",
+      description:
+        "I got into skydiving in University and have been hooked ever since. Jumping out of a plane is the best way to clear your mind, and one of the best feelings in the world.",
       badges: ["B License", "VP of UoSSC"],
     },
   ];
@@ -29,7 +31,7 @@ export default function Interests() {
   return (
     <div id="Interests" className="section">
       <h3>Interests</h3>
-      <p>work in progress</p>
+      <p>--- WORK IN PROGRESS ---</p>
       <div className="interest-container">
         {interests.map((interest, key) => {
           return <ImageContainer interest={interest} key={key} />;
@@ -59,8 +61,13 @@ function ImageContainer({ interest }) {
   return (
     <div className="interest-card">
       <div className="card-left">
-        <p>{interest.title}</p>
-        <p>{interest.description}</p>
+        <p className="title">{interest.title}</p>
+        <p className="description">{interest.description}</p>
+        <div className="badges">
+          {interest.badges.map((badge, key) => {
+            return <a key={key}>{badge}</a>;
+          })}
+        </div>
       </div>
       <div className="card-right">
         <img
