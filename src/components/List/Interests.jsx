@@ -17,6 +17,7 @@ export default function Interests() {
       description:
         "I have been skiing since forever but only recently have I started to ski more seriously. One of my lifestyle goals is to be able to ski on weekends casually whenever I want.",
       badges: ["BASI 1 Instructor"],
+      badge_links: ["https://www.basi.org.uk/AboutUs"],
     },
     {
       title: "Skydiving",
@@ -25,6 +26,10 @@ export default function Interests() {
       description:
         "I got into skydiving in University and have been hooked ever since. Jumping out of a plane is the best way to clear your mind, and one of the best feelings in the world.",
       badges: ["B License", "VP of UoSSC"],
+      badge_links: [
+        "https://britishskydiving.org/training-progression/what-next/",
+        "https://www.susu.org/groups/skydive",
+      ],
     },
   ];
 
@@ -65,7 +70,11 @@ function ImageContainer({ interest }) {
         <p className="description">{interest.description}</p>
         <div className="badges">
           {interest.badges.map((badge, key) => {
-            return <a key={key}>{badge}</a>;
+            return (
+              <a target="_blank" href={interest.badge_links[key]} key={key}>
+                {badge}
+              </a>
+            );
           })}
         </div>
       </div>
