@@ -46,9 +46,12 @@ export default function Title() {
         </a>
         <div className="separating-dot">·</div>
 
-        <a href="https://resume.hadri1.com/pdf/resume.pdf" target="_blank">
+        <a href="/files/Hadrien_Develay_Resume.pdf" target="_blank">
           resume
         </a>
+        {/* <a href="https://resume.hadri1.com/pdf/resume.pdf" target="_blank">
+          resume
+        </a> */}
       </div>
       <div className="links-mobile">
         <a href="https://github.com/stecfrit" target="_blank">
@@ -71,8 +74,10 @@ export default function Title() {
         </a>
         {/* <div className="separating-dot">·</div> */}
 
-        <a href="https://resume.hadri1.com/pdf/resume.pdf" target="_blank">
+        <a href="/files/Hadrien_Develay_Resume.pdf" target="_blank">
           <ResumeLogo />
+          {/* <a href="https://resume.hadri1.com/pdf/resume.pdf" target="_blank">
+          <ResumeLogo /> */}
         </a>
       </div>
     </div>
