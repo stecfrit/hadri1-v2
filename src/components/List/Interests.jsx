@@ -7,12 +7,12 @@ export default function Interests() {
       image_folder: "ski",
       images: [
         "tromso.jpg",
+        "valleeperdue.jpg",
         "trysil2.jpg",
         "mask.jpg",
         "trysil.jpg",
         "tromso2.jpg",
         "tignes.jpg",
-        "valleeperdue.jpg",
       ],
       description:
         "I have been skiing since forever but only recently have I started to ski more seriously. One of my lifestyle goals is to be able to ski on weekends casually whenever I want.",
