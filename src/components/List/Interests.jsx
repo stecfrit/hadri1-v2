@@ -6,8 +6,8 @@ export default function Interests() {
       title: "Skiing",
       image_folder: "ski",
       images: [
-        "trysil2.jpg",
         "tromso.jpg",
+        "trysil2.jpg",
         "mask.jpg",
         "trysil.jpg",
         "tromso2.jpg",
