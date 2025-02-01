@@ -2,31 +2,19 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { getNowPlayingItem, getTopTracksItem } from "../api/SpotifyAPI";
 
-export default function CreativeZone(props) {
+export default function CreativeZone() {
   const [loadingCurrent, setLoadingCurrent] = useState(true);
   const [loadingTop, setLoadingTop] = useState(true);
   const [nowPlaying, setNowPlaying] = useState({});
   const [topTracks, setTopTracks] = useState({});
 
   useEffect(() => {
-    Promise.all([
-      getNowPlayingItem(
-        props.client_id,
-        props.client_secret,
-        props.refresh_token
-      ),
-    ]).then((results) => {
+    Promise.all([getNowPlayingItem()]).then((results) => {
       setNowPlaying(results[0]);
       setLoadingCurrent(false);
     });
 
-    Promise.all([
-      getTopTracksItem(
-        props.client_id,
-        props.client_secret,
-        props.refresh_token
-      ),
-    ]).then((results) => {
+    Promise.all([getTopTracksItem()]).then((results) => {
       if (results[0]) {
         setTopTracks(results[0]);
         setTimeout(() => {
@@ -40,7 +28,6 @@ export default function CreativeZone(props) {
     <div id="CreativeZone">
       <div className="background"></div>
       <h3 className="title">My spotify top tracks atm</h3>
-      <h3 className="title">{import.meta.env.VITE_APP_HELLO} </h3>
       {loadingTop ? (
         <div className="top-tracks loading">
           {[...Array(3)].map((_, key) => (

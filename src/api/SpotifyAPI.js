@@ -1,4 +1,3 @@
-//install query-string 'npm install query-string' in the frontend directory
 import queryString from "query-string";
 
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
@@ -7,13 +6,12 @@ const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-pla
 const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
 const TOP_ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/top/artists`;
 
-const client_id = import.meta.env.VITE_APP_SPOTIFY_CLIENT_ID;
-const client_secret = import.meta.env.VITE_APP_SPOTIFY_CLIENT_SECRET;
+// const client_id = import.meta.env.VITE_APP_SPOTIFY_CLIENT_ID;
+// const client_secret = import.meta.env.VITE_APP_SPOTIFY_CLIENT_SECRET;
 const refresh_token = import.meta.env.VITE_APP_SPOTIFY_REFRESH_TOKEN;
 const weird_client_thing = import.meta.env.VITE_APP_SPOTIFY_WEIRD_THING;
 
 const getAccessToken = async () => {
-  // 'check note -- npm install buffer'
   // const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
   const basic = weird_client_thing;
   const response = await fetch(TOKEN_ENDPOINT, {
@@ -31,16 +29,8 @@ const getAccessToken = async () => {
 };
 
 // now playing endpoint
-export const getNowPlaying = async (
-  client_id,
-  client_secret,
-  refresh_token
-) => {
-  const { access_token } = await getAccessToken(
-    client_id,
-    client_secret,
-    refresh_token
-  );
+export const getNowPlaying = async () => {
+  const { access_token } = await getAccessToken();
   return fetch(NOW_PLAYING_ENDPOINT, {
     headers: {
       Authorization: `Bearer ${access_token}`,
@@ -49,12 +39,8 @@ export const getNowPlaying = async (
 };
 
 // top tracks endpoint
-export const getTopTracks = async (client_id, client_secret, refresh_token) => {
-  const { access_token } = await getAccessToken(
-    client_id,
-    client_secret,
-    refresh_token
-  );
+export const getTopTracks = async () => {
+  const { access_token } = await getAccessToken();
   return fetch(TOP_TRACKS_ENDPOINT, {
     headers: {
       Authorization: `Bearer ${access_token}`,
@@ -63,12 +49,8 @@ export const getTopTracks = async (client_id, client_secret, refresh_token) => {
 };
 
 // return data now playing
-export async function getNowPlayingItem(
-  client_id,
-  client_secret,
-  refresh_token
-) {
-  const response = await getNowPlaying(client_id, client_secret, refresh_token);
+export async function getNowPlayingItem() {
+  const response = await getNowPlaying();
   if (response.status === 204 || response.status > 400) {
     return false;
   }
@@ -90,12 +72,8 @@ export async function getNowPlayingItem(
 }
 
 // return data top tracks
-export async function getTopTracksItem(
-  client_id,
-  client_secret,
-  refresh_token
-) {
-  const response = await getTopTracks(client_id, client_secret, refresh_token);
+export async function getTopTracksItem() {
+  const response = await getTopTracks();
   if (response.status === 204 || response.status > 400) {
     return false;
   }
