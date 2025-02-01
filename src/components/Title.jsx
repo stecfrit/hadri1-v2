@@ -1,6 +1,7 @@
 import React from "react";
 
 import Nav from "./Nav";
+import CreativeZone from "./CreativeZone";
 import LinkedinLogo from "../assets/logos/linkedin.svg?react";
 import GithubLogo from "../assets/logos/github.svg?react";
 import EmailLogo from "../assets/logos/email.svg?react";
@@ -25,6 +26,7 @@ export default function Title() {
         passion for innovative web development solutions.
       </p>
       <Nav />
+      <CreativeZone />
       <div className="links">
         <a href="https://github.com/stecfrit" target="_blank">
           github

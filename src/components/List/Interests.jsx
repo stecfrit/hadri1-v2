@@ -31,6 +31,16 @@ export default function Interests() {
         "https://www.susu.org/groups/skydive",
       ],
     },
+    {
+      title: "Sailing",
+      image_folder: "skydiving",
+      images: ["5way.png", "two.jpg"],
+      description: "Work in progress",
+      badges: ["RYA Day Skipper"],
+      badge_links: [
+        "https://www.rya.org.uk/training/professional-qualifications",
+      ],
+    },
   ];
 
   return (
