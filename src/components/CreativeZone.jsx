@@ -27,10 +27,12 @@ export default function CreativeZone(props) {
         props.refresh_token
       ),
     ]).then((results) => {
-      setTopTracks(results[0]);
-      setTimeout(() => {
-        setLoadingTop(false);
-      }, 2000);
+      if (results[0]) {
+        setTopTracks(results[0]);
+        setTimeout(() => {
+          setLoadingTop(false);
+        }, 2000);
+      }
     });
   }, []);
 
