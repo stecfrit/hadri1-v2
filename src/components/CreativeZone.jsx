@@ -40,6 +40,7 @@ export default function CreativeZone(props) {
     <div id="CreativeZone">
       <div className="background"></div>
       <h3 className="title">My spotify top tracks atm</h3>
+      <h3 className="title">{import.meta.env.VITE_APP_HELLO}</h3>
       {loadingTop ? (
         <div className="top-tracks loading">
           {[...Array(3)].map((_, key) => (
