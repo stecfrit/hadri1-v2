@@ -28,9 +28,6 @@ export default function CreativeZone() {
     <div id="CreativeZone">
       <div className="background"></div>
       <h3 className="title">My spotify top tracks atm</h3>
-      <h3 className="title">
-        {loadingCurrent ? "loading current ..." : nowPlaying.title}
-      </h3>
       {loadingTop ? (
         <div className="top-tracks loading">
           {[...Array(3)].map((_, key) => (
