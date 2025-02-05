@@ -1,85 +1,39 @@
-import queryString from "query-string";
-
-const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
-
-const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
-const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
-const TOP_ARTISTS_ENDPOINT = `https://api.spotify.com/v1/me/top/artists`;
-
-// const client_id = import.meta.env.VITE_APP_SPOTIFY_CLIENT_ID;
-// const client_secret = import.meta.env.VITE_APP_SPOTIFY_CLIENT_SECRET;
-const refresh_token = import.meta.env.VITE_APP_SPOTIFY_REFRESH_TOKEN;
-const weird_client_thing = import.meta.env.VITE_APP_SPOTIFY_WEIRD_THING;
-
-const getAccessToken = async () => {
-  // const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
-  const basic = weird_client_thing;
-  const response = await fetch(TOKEN_ENDPOINT, {
-    method: "POST",
-    headers: {
-      Authorization: `Basic ${basic}`,
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: queryString.stringify({
-      grant_type: "refresh_token",
-      refresh_token,
-    }),
-  });
-  return response.json();
-};
-
-// now playing endpoint
-export const getNowPlaying = async () => {
-  const { access_token } = await getAccessToken();
-  return fetch(NOW_PLAYING_ENDPOINT, {
-    headers: {
-      Authorization: `Bearer ${access_token}`,
-    },
-  });
-};
-
-// top tracks endpoint
-export const getTopTracks = async () => {
-  const { access_token } = await getAccessToken();
-  return fetch(TOP_TRACKS_ENDPOINT, {
-    headers: {
-      Authorization: `Bearer ${access_token}`,
-    },
-  });
-};
-
 // return data now playing
 export async function getNowPlayingItem() {
-  const response = await getNowPlaying();
+  const response = await fetch(
+    "/.netlify/functions/fetch-spotify?type=now-playing"
+  );
   if (response.status === 204 || response.status > 400) {
     return false;
   }
-  const song = await response.json();
+  const data = await response.json();
 
-  const albumImageUrl = song.item?.album.images[0].url;
-  const artist = song.item?.artists.map((_artist) => _artist.name).join(", ");
-  const isPlaying = song.is_playing;
-  const songUrl = song.item.external_urls.spotify;
-  const title = song.item.name;
+  if (!data || !data.item) {
+    return false;
+  }
 
-  return {
-    albumImageUrl,
-    artist,
-    isPlaying,
-    songUrl,
-    title,
+  const song = {
+    albumImageUrl: data.item.album.images[0].url,
+    artist: data.item.artists.map((artist) => artist.name).join(", "),
+    isPlaying: data.is_playing,
+    songUrl: data.item.external_urls.spotify,
+    title: data.item.name,
   };
+
+  return song;
 }
 
 // return data top tracks
 export async function getTopTracksItem() {
-  const response = await getTopTracks();
+  const response = await fetch(
+    "/.netlify/functions/fetch-spotify?type=top-tracks"
+  );
   if (response.status === 204 || response.status > 400) {
     return false;
   }
-  const items = await response.json();
+  const data = await response.json();
 
-  const limited_items = items.items.slice(0, 3);
+  const limited_items = data.items.slice(0, 3);
 
   const tracks = limited_items.map((item) => {
     return {

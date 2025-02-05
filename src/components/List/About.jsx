@@ -40,11 +40,11 @@ export default function About() {
             </p> */}
 
       <p>
-        Hi! I’m Hadrien Develay <Twemoji emoji="👋" />, an Aerospace Engineering
-        graduate from the University of Southampton with a passion for
-        integrating computer science with spacecraft engineering. My academic
-        projects included designing a passive magnetic axial thrust bearing and
-        an unmanned vehicle, forming a solid foundation in engineering and space
+        Hi! I’m Hadrien Develay, an Aerospace Engineering graduate from the
+        University of Southampton with a passion for integrating computer
+        science with spacecraft engineering. My academic projects included
+        designing a passive magnetic axial thrust bearing and an unmanned
+        vehicle, forming a solid foundation in engineering and space
         exploration.
       </p>
       <p>
@@ -56,9 +56,8 @@ export default function About() {
       <p>
         Outside work, I'm an enthusiastic sportsman involved in skydiving,
         sailing, and bouldering, and a BASI Level 1 Ski Instructor. I enjoy DIY
-        projects, 3D printing, and multimedia production. Fluent in French{" "}
-        <Twemoji emoji="🇫🇷" /> and English <Twemoji emoji="🇬🇧" /> with knowledge
-        of Spanish and Norwegian <Twemoji emoji="🇳🇴" />, I'm eager to apply my
+        projects, 3D printing, and multimedia production. Fluent in French and
+        English with knowledge of Spanish and Norwegian, I'm eager to apply my
         diverse skills in new challenges.
       </p>
     </div>
