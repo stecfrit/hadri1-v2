@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { getNowPlayingItem, getTopTracksItem } from "../api/SpotifyAPI";
+import { getNowPlayingItem, getTopTracksItem } from "../api/spotify";
 
 export default function CreativeZone() {
   const [loadingCurrent, setLoadingCurrent] = useState(true);
