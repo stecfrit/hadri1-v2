@@ -5,7 +5,7 @@ html {
   --background-color2: #1f2823;
   // --background-color2: var(--background-color);
 }
-html[data-theme="default"] {
+html[data-theme="green"] {
   --background-color: #31473a;
   --text-color: #edf4f2;
   --text-color-alt: #a7beae;
@@ -46,6 +46,13 @@ html[data-theme="blue3"] {
   --text-color: #90afc5;
   --text-color-alt: #c36d4d;
   --background-color2: #21282a;
+  // --background-color2: var(--background-color);
+}
+html[data-theme="gold"] {
+  --background-color: #17272c;
+  --text-color: #f8ed54;
+  --text-color-alt: #d8dddf;
+  --background-color2: #0b1214;
   // --background-color2: var(--background-color);
 }
 
