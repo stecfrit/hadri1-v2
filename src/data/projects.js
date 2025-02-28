@@ -1,5 +1,16 @@
 export const projects = [
   {
+    name: "Hadri1.com",
+    moniker: "hadri1",
+    description:
+      "My personal portfolio website, built with React and Vite. I also wanted to use the Spotify API to display my current listening activity. This website showcases all of my resume, projects, experience and hobbies, as well as my design skills.",
+    tech: ["React", "Vite", "SpotifyAPI", "Netlify Functions", "SCSS"],
+    link: "https://hadri1.com",
+    // preview_image: "orbit.png",
+    new: false,
+    featured: false,
+  },
+  {
     name: "Orbital Calculator",
     moniker: "orbit",
     description:
