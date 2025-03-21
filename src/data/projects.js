@@ -1,5 +1,16 @@
 export const projects = [
   {
+    name: "Fridge List",
+    moniker: "fridge",
+    description:
+      "A simple shopping list app that generates a link and a qr code to let the whole household access and edit easily digitally. Perfect when living in a shared apartment. The lists are updated live using Supabase's realtime subscriptions. This was a personal project to learn Next.js and Supabase, as well as to create a useful tool for my household.",
+    tech: ["Next", "Typescript", "Tailwind", "Supabase"],
+    link: "https://fridge.stecfrit.com",
+    preview_image: "fridge.png",
+    new: true,
+    featured: true,
+  },
+  {
     name: "Hadri1.com",
     moniker: "hadri1",
     description:
