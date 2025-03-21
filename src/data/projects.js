@@ -62,7 +62,7 @@ export const projects = [
     link: "https://zeitgeist.hadri1.com",
     preview_image: "zeitgeist.png",
     new: false,
-    featured: true,
+    featured: false,
   },
   {
     name: "Photo Gallery",
