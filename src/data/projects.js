@@ -9,6 +9,7 @@ export const projects = [
     preview_image: "fridge.png",
     new: true,
     featured: true,
+    year: 2025,
   },
   {
     name: "Hadri1.com",
@@ -20,6 +21,7 @@ export const projects = [
     // preview_image: "orbit.png",
     new: false,
     featured: false,
+    year: 2024,
   },
   {
     name: "Orbital Calculator",
@@ -31,6 +33,7 @@ export const projects = [
     preview_image: "orbit.png",
     new: true,
     featured: true,
+    year: 2024,
   },
   {
     name: "Chess for iPhone",
@@ -42,6 +45,7 @@ export const projects = [
     preview_image: "chess.png",
     new: true,
     featured: true,
+    year: 2024,
   },
   {
     name: "Luminance Company Website",
@@ -53,6 +57,7 @@ export const projects = [
     preview_image: "luminance.png",
     new: false,
     featured: true,
+    year: 2024,
   },
   {
     name: "Test",
@@ -63,17 +68,7 @@ export const projects = [
     preview_image: "zeitgeist.png",
     new: false,
     featured: false,
-  },
-  {
-    name: "Photo Gallery",
-    moniker: "gallery",
-    description:
-      "This is an old photo gallery website I made for a friend, using simple HTML and CSS, when I was starting out in front-end web development.",
-    tech: [],
-    link: "https://gallery.hadri1.com",
-    preview_image: "gallery.png",
-    new: false,
-    featured: true,
+    year: 2024,
   },
   {
     name: "Big Brain",
@@ -85,6 +80,7 @@ export const projects = [
     preview_image: "brain.png",
     new: false,
     featured: false,
+    year: 2024,
   },
   {
     name: "Silhouette",
@@ -94,5 +90,18 @@ export const projects = [
     link: "https://chat.hadri1.com",
     new: false,
     featured: false,
+    year: 2024,
+  },
+  {
+    name: "Photo Gallery",
+    moniker: "gallery",
+    description:
+      "This is an old photo gallery website I made for a friend, using simple HTML and CSS, when I was starting out in front-end web development.",
+    tech: [],
+    link: "https://gallery.hadri1.com",
+    preview_image: "gallery.png",
+    new: false,
+    featured: true,
+    year: 2023,
   },
 ];
