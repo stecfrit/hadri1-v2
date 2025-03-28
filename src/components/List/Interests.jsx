@@ -33,8 +33,8 @@ export default function Interests() {
     },
     {
       title: "Sailing",
-      image_folder: "skydiving",
-      images: ["5way.png", "two.jpg"],
+      image_folder: "sailing",
+      images: ["laser.JPG", "rya.JPG"],
       description: "Work in progress",
       badges: ["RYA Day Skipper"],
       badge_links: [
