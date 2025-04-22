@@ -34,7 +34,10 @@ export default function ProjectPage() {
                   key={key}
                 >
                   <td className="year">{project.year}</td>
-                  <td className="name">{project.name}</td>
+                  <td className="name">
+                    {project.name}
+                    {project.new && <span className="new-badge">NEW</span>}
+                  </td>
                   <td className="tech">
                     {project.tech.map((tech, key) => {
                       return <span key={key}>{tech}</span>;
