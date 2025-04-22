@@ -1,5 +1,17 @@
 export const projects = [
   {
+    name: "Gradient Maker",
+    moniker: "gradient",
+    description:
+      "An app that creates beautiful gradients, using a simple and intuitive interface. You can randomize the colors and sizes of the shapes, then export in different resolution.",
+    tech: ["Typescript", "Tailwind", "React"],
+    link: "https://gradient.hadri1.com",
+    preview_image: "gradient.png",
+    new: true,
+    featured: false,
+    year: 2025,
+  },
+  {
     name: "Fridge List",
     moniker: "fridge",
     description:
