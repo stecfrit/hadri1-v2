@@ -16,6 +16,27 @@
     font-weight: 700;
     font-size: $font-size-mega;
     letter-spacing: -1px;
+    position: relative;
+    margin-right: auto;
+
+    .profile-picture {
+      $profile-picture-size: 70px;
+      width: $profile-picture-size;
+      height: $profile-picture-size;
+      border-radius: 50%;
+      object-fit: cover;
+      position: absolute;
+      border: 2px solid $text-color-alt;
+      transform: translate(50%, 50%);
+      bottom: 50%;
+      right: calc(-1 * $profile-picture-size / 2 - 20px);
+      transition: all 0.1s ease;
+      &:hover {
+        $profile-picture-size-hover: $profile-picture-size * 1.3;
+        width: $profile-picture-size-hover;
+        height: $profile-picture-size-hover;
+      }
+    }
   }
   h2 {
     font-weight: 600;

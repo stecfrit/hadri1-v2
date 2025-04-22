@@ -11,8 +11,11 @@ import ResumeLogo from "../assets/logos/resume.svg?react";
 export default function Title() {
   return (
     <div id="Title">
-      <h1>Hadrien Develay &#x1f680;</h1>
-      <h2>Web Software Engineer</h2>
+      <h1>
+        Hadrien Develay
+        <img src="/profile.jpg" alt="Profile" className="profile-picture" />
+      </h1>
+      <h2>Fullstack Developer</h2>
       {/* <p>
                 Fear is the mind-killer. Fear is the little-death that brings
                 total obliteration. I will face my fear. I will permit it to
@@ -22,8 +25,8 @@ export default function Title() {
                 <a href='https://en.wikipedia.org/wiki/Bene_Gesserit#Litany_against_fear' target='_blank' className='quote-desc'>&nbsp;&nbsp;&nbsp;Litany Against Fear, <em>Dune</em>, 1965.</a>
             </p> */}
       <p>
-        Dynamic Web Software Engineer with robust problem-solving skills and a
-        passion for innovative web development solutions.
+        Dynamic Fullstack Web Developer with robust problem-solving skills and a
+        passion for beautiful and functional web applications.
       </p>
       <Nav />
       <CreativeZone />
