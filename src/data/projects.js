@@ -1,9 +1,9 @@
 export const projects = [
   {
-    name: "Gradient Maker",
+    name: "Grainy Gradients",
     moniker: "gradient",
     description:
-      "An app that creates beautiful gradients, using a simple and intuitive interface. You can randomize the colors and sizes of the shapes, then export in different resolution.",
+      "An app that creates beautiful grainy gradients, using a simple and intuitive interface. You can randomize the colors and sizes of the shapes, then export in different resolution.",
     tech: ["Typescript", "Tailwind", "React"],
     link: "https://gradient.hadri1.com",
     preview_image: "gradient.png",
