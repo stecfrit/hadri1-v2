@@ -1,5 +1,13 @@
 export const experiences = [
   {
+    company: "Kongsberg Satellite Services",
+    role: "Software Developer",
+    start: "06/25",
+    end: "now",
+    description: "",
+    skills: [],
+  },
+  {
     company: "DataAnnotation",
     role: "Software Validation Engineer",
     start: "07/24",
@@ -7,7 +15,6 @@ export const experiences = [
     description:
       "Critically analyse and rank AI model responses to coding and STEM related user prompts. Create and test coding responses to train AI models.",
     skills: [],
-    logo: "luminance-logo.png",
   },
   {
     company: "Luminance",
