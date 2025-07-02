@@ -11,7 +11,7 @@ export const experiences = [
     company: "DataAnnotation",
     role: "Software Validation Engineer",
     start: "07/24",
-    end: "now",
+    end: "06/25",
     description:
       "Critically analyse and rank AI model responses to coding and STEM related user prompts. Create and test coding responses to train AI models.",
     skills: [],
